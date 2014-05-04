@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 0c63d88d9f68f77499593a62577a2988
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: obelisk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: obelisk_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 80
+      alignment: 7
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

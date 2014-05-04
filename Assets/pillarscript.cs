@@ -1,26 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pillarscript : MonoBehaviour {
+public class pillarscript : Attackable {
 
-	public static int pillarHP = 1000;
 	public AudioSource hit1, hit2;
 
+	Vector3 initpos;
+	public Transform explosion_pref, fallenpillar_pref;
+
 	// Use this for initialization
-	void Start () {
-	
+	public override void Start () {
+		base.Start ();
+		hp = 50;
+
+		initpos = transform.position;
 	}
 
-	void Update(){
+	public override void Update(){
+		base.Update();
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 		if(transform.position.x != 0 || transform.position.y != 0){
-			transform.position = new Vector2(Mathf.Lerp(transform.position.x, 0, 0.9f), Mathf.Lerp (transform.position.y, 0, 0.9f));
+			transform.position = new Vector2(Mathf.Lerp(transform.position.x, initpos.x, 0.9f), Mathf.Lerp (transform.position.y, initpos.y, 0.9f));
 		}
 	}
-	
+	/*
 	void OnTriggerEnter2D(Collider2D col){
 		if(col.gameObject.tag == "attackbox"){
 			Vector2 dir = transform.position - GameObject.Find("player").transform.position;
@@ -29,23 +34,28 @@ public class pillarscript : MonoBehaviour {
 			Hit (Player.damage);
 		}
 	}
+	*/
 
-	void Hit(int damage){
-		pillarHP -= damage;
+	public override void Hit(int damage){
+		base.Hit (damage);
+		Play.Shake (Random.Range (0.0f, 0.02f) + 0.03f);
 
-		if(pillarHP <= 0){
-			Die();
+		if(Random.Range(0,2) == 0){
+			AudioSource.PlayClipAtPoint(hit1.clip, transform.position);
+		}
+		else{
+			AudioSource.PlayClipAtPoint(hit2.clip, transform.position);
 		}
 	}
 
-	void Die(){
-		Debug.Log ("go to boss");
+	public override void Die(){
+		Play.Shake(2f);
+		Instantiate (explosion_pref, transform.position, Quaternion.identity);
+		Instantiate (fallenpillar_pref, transform.position, Quaternion.identity);
+		Destroy(this.gameObject);
 	}
 
 	void OnGUI(){
 		Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-//		Debug.Log (pos.x + " " + pos.y);
-//		Debug.Log ("pillar " + Camera.main.WorldToScreenPoint(transform.position);
-		GUI.Label(new Rect(pos.x - 20, Screen.height - pos.y - 60, 100, 20), "HP: " + pillarHP);
 	}
 }

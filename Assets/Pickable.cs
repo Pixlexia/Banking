@@ -3,23 +3,10 @@ using System.Collections;
 
 public class Pickable : MonoBehaviour {
 
-	string type;
+	protected string type;
 
 	// Use this for initialization
-	void Start () {
-		switch(Random.Range (0,2)){
-		case 0:
-			type = "1";
-			break;
-
-		case 1:
-			type = "2";
-			break;
-
-		default:
-			type = "default";
-			break;
-		}
+	public virtual void Start () {
 	}
 	
 	// Update is called once per frame
@@ -27,15 +14,13 @@ public class Pickable : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D col){
+	void OnTriggerEnter2D(Collider2D col){
 		if(col.gameObject.name == "player"){
 			Picked();
 		}
 	}
 
-	void Picked(){
-		Debug.Log ("" + type);
-
+	public virtual void Picked(){
 		Destroy(this.gameObject);
 	}
 }
